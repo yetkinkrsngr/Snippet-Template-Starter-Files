@@ -181,3 +181,84 @@ footer div {
   width: 30%;
   font-size: 0.8rem;
 }
+@media (max-width: 400px) {
+  .Menu {
+    padding: 30px 5%;
+  }
+  .hamburgerMenu {
+    display: inline;
+  }
+
+  .menuDetails {
+    width: 60%;
+    position: relative;
+  }
+  .rightMenuSide {
+    position: absolute;
+    top: 40px;
+    flex-direction: column;
+    width: 150%;
+    border: 2px solid black;
+    height: 40vh;
+    background-color: aliceblue;
+    transition: all ease 0.5s;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .search {
+    width: 40px;
+    height: 40px;
+  }
+  .search-open {
+    font-size: 1.2em;
+  }
+  .navBottomText h1 {
+    font-size: 2.5em;
+  }
+  .navBottomText .navBottomFirstText {
+    width: 100%;
+  }
+  .navBottomText button {
+    margin-bottom: 15px;
+  }
+  .navBottomImg {
+    margin-top: 30px;
+  }
+  .snippetImg {
+    width: 100%;
+  }
+  .btnSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .leftSection {
+    margin-bottom: 30px;
+  }
+  .leftSideContainer {
+    width: 100%;
+  }
+  .leftSideContainer p {
+    width: 100%;
+    padding: 0;
+  }
+  .rightSection img {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .leftfooter img {
+    margin-left: 0;
+  }
+  .rightfooter {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footerlink {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
