@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7852e4b612.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="Menu">
+          <li><img class="hver" src="Assets/Logo.svg" alt="" /></li>
+          <li class="menuDetails">
+            <div class="rightMenuSide">
+              <div class="singIn hver">
+                <a class="hver" href="#"> Sing in</a>
+              </div>
+              <div class="getStarted">
+                <button class="button hver">
+                  <a href="#" class="btn-link"
+                    ><span class="btn-link-bold"> Get Started</span> - İt's
+                    Free</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="leftMenuSide">
+              <div class="search">
+                <div class="search-open">
+                  <i class="fa-solid fa-magnifying-glass opClose"></i>
+                </div>
+                <div class="searchInput">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search-container"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="hamburgerMenu">
+            <img src="Assets/Hamburger Menu.svg" alt="" />
+          </li>
+        </ul>
+        <div class="navBottom">
+          <div class="navBottomText">
+            <h1>Gorgeous Code Snippets</h1>
+            <p class="navBottomFirstText">
+              With Snipper, create fully customizable code snippets in a matter
+              of seconds right from your browser
+            </p>
+            <button class="button hver">
+              <a href="#" class="btn-link"
+                ><span class="btn-link-bold"> Get Started</span> - İt's Free</a
+              >
+            </button>
+            <p>No credit card required.</p>
+          </div>
+          <div class="navBottomImg">
+            <img
+              class="snippetImg hver"
+              src="Assets/Snippet Image.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+      <section class="btnSection">
+        <div class="leftSection">
+          <div class="leftSideContainer">
+            <h1>A fully customizable code snippet editor</h1>
+            <p>
+              Fully customizable the color scheme of your code snippet , or use
+              our own premade color schemes.Export your code snippets in JPG,
+              PDF, PNG, or any of the other 10+ common extensions.
+            </p>
+            <button class="button hver">
+              <a href="#" class="btn-link"
+                ><span class="btn-link-bold"> Get Started</span> - İt's Free</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img class="hver" src="Assets/CustomizableImage.png" alt="" />
+        </div>
+      </section>
+      <footer>
+        <div class="leftfooter">
+          <img class="hver" src="Assets/Logo.svg" alt="" />
+        </div>
+        <div class="rightfooter">
+          <div class="footerlink">
+            <a href="#"> Terms of Service </a>
+          </div>
+          <div class="footerlink">
+            <a href="#"> Privacy Policy </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let searchOpen = document.querySelector(".search-open");
+      let search = document.querySelector(".search");
+      let check = document.querySelector(".opClose");
+      searchOpen.addEventListener("click", () => {
+        search.classList.toggle("active");
+        check.classList.toggle("fa-magnifying-glass");
+        check.classList.toggle("fa-x");
+      });
+    </script>
+  </body>
+</html>
